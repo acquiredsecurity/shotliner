@@ -4,15 +4,32 @@
 
 # Shotliner
 
-**Shotliner** is a malware forensic timeline diffing tool. Inspired by Regshot, it compares a clean baseline timeline against a post-infection timeline to identify newly introduced artifact activity. Ideal for malware triage, reverse engineering, and forensic investigations. Always take a snapshot of your clean VM! Take a baseline Kape/EZ tools collection from your Malware VM and run whatever parsing you want on it... EZ Tools, Axiom, Chainsaw Hayabusa. Run [ForensicTimeliner](https://github.com/acquiredsecurity/forensic-timeliner) on the output and create a tineline.
+**Shotliner** is a malware forensic timeline diffing tool. Inspired by [Regshot](https://github.com/Seabreg/Regshot), it compares a clean baseline timeline against a post-infection timeline to identify newly introduced artifact activity. Ideal for malware triage, reverse engineering, and forensic investigations. Always take a snapshot of your clean VM! Take a baseline collection and process your raw forensic artifacts with the tools below.
 
-Execute your malware sample and let it run for the duration of your intended analysis and then take a second forensic artifact collection of the VM/Host. Rerun your variaition of EZ Tools, Axiom, Chainsaw Hayabusa and then again run ForensicTimeliner.
+Tools you should use for triae collection and data processing.
+- Kape/EZ tools 
+- Axiom
+- Chainsaw
+- Hayabusa
 
-Now you have two tinelines one pre execution and one post execution. Use shotliner to run a dif between the new outputs to more easily find malware based activities and elminate all the known behaviors from your timeline!
+- Run [ForensicTimeliner](https://github.com/acquiredsecurity/forensic-timeliner) on the output from your processing tools and create a timeline.
 
-```csv
-.\shotliner.exe --base C:\Users\admin0x\Desktop\shotliner\test\base\20250502_235216_ForensicTimeliner.csv --new C:\Users\admin0x\Desktop\shotliner\test\infected\20250502_235455_ForensicTimeliner.csv --out diff.csv
+Execute your malware sample and let it run for the duration of your intended analysis and then take a second forensic artifact collection of the VM/Host. 
+Rerun your variaition of EZ Tools, Axiom, Chainsaw Hayabusa and then again run ForensicTimeliner.
+
+Now you have TWO timelines one pre execution and one post execution. 
+Use shotliner to run a dif between the new outputs to more easily find malware based activities and elminate all the known behaviors from your timeline to quickly get to the bad!
+
+```sample commandline
+.\shotliner.exe --Base C:\Users\admin0x\Desktop\shotliner\test\base\20250502_235216_ForensicTimeliner.csv --New C:\Users\admin0x\Desktop\shotliner\test\infected\20250502_235455_ForensicTimeliner.csv --Output diff.csv
 ```
+| Argument   | Description                                  |
+| ---------- | -------------------------------------------- |
+| `--Base`   | Path to the clean baseline timeline CSV      |
+| `--New`    | Path to the infected/post-event timeline CSV |
+| `--Output` | (Optional) Custom output path for diff CSV   |
+| `--Help`   | Displays this help menu                      |
+
 ---
 
 ## Features
