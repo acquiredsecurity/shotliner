@@ -4,7 +4,7 @@
 
 # Shotliner
 
-**Shotliner** is a malware forensic timeline diffing tool. Inspired by [Regshot](https://github.com/Seabreg/Regshot), it compares a clean baseline timeline against a post-infection timeline to identify newly introduced artifact activity. Ideal for malware triage, reverse engineering, and forensic investigations. Always take a snapshot of your clean VM! Take a baseline collection and process your raw forensic artifacts with the tools below.
+**Shotliner** is a malware forensic timeline diffing tool. Inspired by [Regshot](https://github.com/Seabreg/Regshot), it compares a clean baseline forensic timeline against a post-infection timeline to identify newly introduced artifact activity. Ideal for malware triage, reverse engineering, and forensic investigations. Always take a snapshot of your clean VM! Take a baseline collection and process your raw forensic artifacts with the tools below.
 
 Tools you should use for triae collection and data processing.
 - Kape/EZ tools 
