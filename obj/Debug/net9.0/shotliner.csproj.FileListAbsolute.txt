@@ -1,0 +1,14 @@
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.AssemblyInfoInputs.cache
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.AssemblyInfo.cs
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.csproj.CoreCompileInputs.cache
+C:\repos\shotliner\bin\Debug\net9.0\shotliner.exe
+C:\repos\shotliner\bin\Debug\net9.0\shotliner.deps.json
+C:\repos\shotliner\bin\Debug\net9.0\shotliner.runtimeconfig.json
+C:\repos\shotliner\bin\Debug\net9.0\shotliner.dll
+C:\repos\shotliner\bin\Debug\net9.0\shotliner.pdb
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.dll
+C:\repos\shotliner\obj\Debug\net9.0\refint\shotliner.dll
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.pdb
+C:\repos\shotliner\obj\Debug\net9.0\shotliner.genruntimeconfig.cache
+C:\repos\shotliner\obj\Debug\net9.0\ref\shotliner.dll
